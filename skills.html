@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Steven Klein G. Fernandez</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><b>S</b> Steven</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="others.html">Others</a>
+                <a href="skills.html">Skills</a>
+                <a href="#contact" class="contact-btn">Contact</a>
+                <button id="theme-toggle">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="skills-section">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p>Technologies and tools I'm proficient with</p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <p class="skill-category-desc">Client-side technologies for building responsive user interfaces</p>
+                    <div class="skills-grid">
+                        <img src="images/html-logo.jpg" alt="HTML">
+                        <img src="images/css-logo.png" alt="CSS">
+                        <img src="images/javascript-logo.png" alt="JavaScript">
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <p class="skill-category-desc">Server-side technologies for building scalable applications</p>
+                    <div class="skills-grid">
+                        <img src="images/php-logo.png" alt="PHP">
+                        <img src="images/java-logo.png" alt="Java">
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Currently Studying</h3>
+                    <p class="skill-category-desc">Languages and frameworks I'm actively learning</p>
+                    <div class="skills-grid">
+                        <img src="images/typescript.png" alt="TypeScript">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="contactModal" class="modal-overlay">
+        <div class="modal-card">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Me</h2>
+            <div class="modal-info">
+                <p>📧 <b>Email:</b>fernandezklein123@gmail.com</p>
+            </div>
+            <button class="say-hello" id="closeModalBtn">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

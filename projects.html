@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Steven Klein G. Fernandez</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><b>S</b> Steven</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="others.html">Others</a>
+                <a href="skills.html">Skills</a>
+                <a href="#contact" class="contact-btn">Contact</a>
+                <button id="theme-toggle">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects-section">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>A selection of projects I've built to develop my skills</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Scholarship Management System</h3>
+                        <span class="project-tag">Full Stack</span>
+                    </div>
+                    <p class="project-description">A comprehensive system designed for PUP Santa Mesa to manage scholarship applications, approvals, and disbursements. Built with modern web technologies to streamline the scholarship process.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Personal Portfolio</h3>
+                        <span class="project-tag">Frontend</span>
+                    </div>
+                    <p class="project-description">An elegant and responsive portfolio website showcasing my skills, projects, and experience. Features smooth animations, dark mode support, and a modern design aesthetic.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Clinic Management System</h3>
+                        <span class="project-tag">Full Stack</span>
+                    </div>
+                    <p class="project-description">A school project that implements a complete clinic management system for handling patient records, appointments, and medical information. Demonstrates database design and CRUD operations.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Fix Me - Word Game</h3>
+                        <span class="project-tag">Game</span>
+                    </div>
+                    <p class="project-description">An interactive word guessing game where players unscramble jumbled words to solve puzzles. Features game logic, scoring system, and an engaging user interface.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Java</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="contactModal" class="modal-overlay">
+        <div class="modal-card">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Me</h2>
+            <div class="modal-info">
+                <p>📧 <b>Email:</b>fernandezklein123@gmail.com</p>
+            </div>
+            <button class="say-hello" id="closeModalBtn">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

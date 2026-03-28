@@ -7,6 +7,8 @@ function setTheme(theme) {
         document.body.classList.remove("dark-mode");
         if(themeBtn) themeBtn.textContent = "🌙";
     }
+    // Save theme preference to localStorage
+    localStorage.setItem("theme", theme);
 }
 
 function toggleTheme() {
@@ -16,6 +18,12 @@ function toggleTheme() {
         setTheme("dark");
     }
 }
+
+// Load saved theme on page load
+window.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme") || "light";
+    setTheme(savedTheme);
+});
 
 const themeToggleBtn = document.getElementById("theme-toggle");
 if(themeToggleBtn) {
