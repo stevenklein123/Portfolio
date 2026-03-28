@@ -1,0 +1,82 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+        <div class="navbar">
+            <div class="logo"><b>S</b> Steven</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Projects</a>
+                <a href="#project">Others</a>
+                <a href="#others">Skills</a>
+                <a href="#contact" class="contact-btn">Contact</a>
+                <button id="theme-toggle">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-text">
+                <h1>Hello, I'm <br><span>Steven Klein G. Fernandez</span></h1>
+                <p>I am an aspiring web developer and student at <b>Quezon City University (QCU)</b>. I am passionate about building real-world applications using HTML, CSS, JavaScript, and PHP.</p>
+                <button class="say-hello">Say Hello!</button>
+            </div>
+            <div class="hero-img">
+                <img src="images/e4ce24ac-adc5-47c7-996a-6d800425294e.jpg" alt="Steven Klein">
+            </div>
+        </section>
+        <section class="stats-container">
+        <div class="stat-card">
+            <h3>Projects</h3>
+            <ul class="project-list">
+                <li>Scholarship Management System (PUP sta. mesa)</li>
+                <li>Personal Portfolio</li>
+                <li>Clinic Management System (School Project)</li>
+                <li>Fix Me (Jumbled Guessing Word Game)</li>
+            </ul>
+        </div>
+
+        <div class="stat-card">
+            <h3>Others</h3>
+            <p>CCS Programming competition 2026 (9th place)</p>
+            <p>Arduino Uno Introduction 2026 (Seminar)</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Skills</h3>
+            <div class="skills-grid">
+                <img src="images/html-logo.jpg" alt="HTML">
+                <img src="images/css-logo.png" alt="CSS">
+                <img src="images/javascript-logo.png" alt="JS">
+                <img src="images/php-logo.png" alt="PHP">
+            </div>
+        </div>
+    </section>
+    </main>
+
+
+    </body>
+
+    <div id="contactModal" class="modal-overlay">
+        <div class="modal-card">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Me</h2>
+            <div class="modal-info">
+                <p>📧 <b>Email:</b>fernandezklein123@gmail.com</p>
+            </div>
+            <button class="say-hello" id="closeModalBtn">Close</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    </html>
+
