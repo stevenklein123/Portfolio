@@ -365,16 +365,26 @@ body {
     justify-content: center;
 }
 
-.modal-card {
-    background-color: var(--bg-color);
-    padding: 30px;
-    border-radius: 20px;
-    width: 90%;
-    max-width: 400px;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    animation: slideUp 0.3s ease-out;
+.modal-info {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.modal-info p {
+    margin: 12px 0;
+    font-size: 0.95rem;
+}
+
+.contact-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+    color: var(--primary-dark);
 }
 
 /* Animation */
