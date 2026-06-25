@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── BUTTONS & ICONS HOVER TRANSITIONS ── */
+.dlBtn, .contactBtn, .gmailIcon, .githubIcon, .facebookIcon {
+  transition: transform 0.3s ease;
+}
+
+.dlBtn:hover, .contactBtn:hover, .gmailIcon:hover, .githubIcon:hover, .facebookIcon:hover {
+  transform: scale(1.08);
+}
+
+/* ── CUSTOM PORTFOLIO KEYFRAMES ── */
+@keyframes bracketFlicker {
+  0%, 100% { opacity: 0.1; }
+  45% { opacity: 0.12; }
+  50% { opacity: 0.25; text-shadow: 0 0 8px rgba(0, 243, 255, 0.6); }
+  55% { opacity: 0.15; }
+}
+
+/* Ang animation para sa swabeng pagtaas-baba ng scroll line */
+@keyframes scrollLineBounce {
+  0%, 100% { 
+    transform: translateY(0); 
+    opacity: 0.5; 
+  }
+  50% { 
+    transform: translateY(12px); /* Bababa ng bahagya */
+    opacity: 1;                  /* Liliwanag ang neon glow */
+  } 
+}
+
+/* ── ANIMATION UTILITY CLASSES ── */
+.animate-bracket-flicker {
+  animation: bracketFlicker 4s ease-in-out infinite;
+}
+
+.animate-scroll-line {
+  animation: scrollLineBounce 2s ease-in-out infinite;
+}
+
+
+/* ABOUT /*
+/* Idugtong mo ito sa pinakababa ng CSS file mo kung saan nakalagay yung mga naunang animations */
+
+@keyframes floatImage {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(0, 243, 255, 0.3); opacity: 0.8; }
+  50% { box-shadow: 0 0 35px rgba(0, 243, 255, 0.8); opacity: 1; }
+}
+
+.animate-float-img {
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+/* ── CUSTOM NEON SCROLLBAR ── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #12181F;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00F3FF;
+  border-radius: 10px;
+  box-shadow:
+    0 0 5px #00F3FF,
+    0 0 10px #00F3FF,
+    0 0 20px #00F3FF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4df8ff;
+  box-shadow:
+    0 0 10px #00F3FF,
+    0 0 20px #00F3FF,
+    0 0 30px #00F3FF;
+}
+
+.skill-card {
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: #00F3FF;
+  box-shadow:
+    0 0 10px rgba(0, 243, 255, 0.3),
+    0 0 20px rgba(0, 243, 255, 0.2),
+    0 0 30px rgba(0, 243, 255, 0.1);
+}
